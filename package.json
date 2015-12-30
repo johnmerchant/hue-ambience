@@ -1,0 +1,30 @@
+{
+  "name": "hue-ambience",
+  "version": "0.0.0",
+  "description": "Screen based ambient lighting for the Philips Hue lighting system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "philips",
+    "hue",
+    "ambilight",
+    "lighting",
+    "lights",
+    "ambient",
+    "ambience",
+    "ffmpeg"
+  ],
+  "author": "John Merchant <john@merchant.on.net>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "bmp-js": "0.0.1",
+    "node-hue-api": "^1.2.1",
+    "process": "^0.11.2"
+  },
+  "devDependencies": {
+    "hex": "^0.1.0"
+  }
+}
