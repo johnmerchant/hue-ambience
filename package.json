@@ -19,11 +19,11 @@
   "author": "John Merchant <john@merchant.on.net>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.1.1",
     "bmp-js": "0.0.1",
     "lossystream": "^0.1.0",
     "node-hue-api": "^1.2.1",
-    "process": "^0.11.2"
+    "process": "^0.11.2",
+    "q": "^1.4.1"
   },
   "devDependencies": {
     "hex": "^0.1.0"
