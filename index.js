@@ -1,7 +1,7 @@
 "use strict";
 
-const Promise = require('bluebird');
 const process = require('process');
+const lossy = require('lossystream');
 
 const screencap = require('./lib/screen-capture');
 const bitmap = require('./lib/bitmap-stream');
@@ -10,12 +10,16 @@ const lighting = require('./lib/lighting-sink');
 
 let screen = screencap();
 
-hue.nupnpSearch().then(function (bridges) {
-   
-});
-
-screen.stream.pipe(bitmap())
-   .pipe(colormap())
+screen.stream
+   .pipe(bitmap())
+   .pipe(colormap([{
+      light: 1,
+      x: 0,
+      y: 0,
+      w: 200,
+      h: 200
+   }]))
+   .pipe(lossy())
    .pipe(lighting());
 
 process.on('SIGINT', function () {
