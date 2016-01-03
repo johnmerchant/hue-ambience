@@ -3,9 +3,9 @@
 const fs = require('fs');
 const path = require('path');
 
+const Q = require('q');
 const process = require('process');
 const lossy = require('lossystream');
-const Q = require('q');
 const inquirer = require('inquirer');
 const home = require('user-home');
 const hue = require('node-hue-api');
@@ -48,7 +48,7 @@ function run(options, api) {
             console.log([
                drops,
                ' frames dropped (',
-               (new Date().valueOf() - start.valueOf()) / 1000,
+               ((new Date().valueOf() - start.valueOf()) / 1000.0).toFixed(2),
                '/sec)'
             ].join(''));
             drops = 0;
