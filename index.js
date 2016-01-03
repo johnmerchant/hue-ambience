@@ -19,6 +19,7 @@ function run(options, api) {
    
    let screen = screencap({
       fps: options.fps,
+      framerate: options.framerate,
       size: options.size
    });
    
