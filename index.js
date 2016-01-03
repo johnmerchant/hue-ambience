@@ -20,7 +20,8 @@ function run(options, api) {
    let screen = screencap({
       fps: options.fps,
       framerate: options.framerate,
-      size: options.size
+      size: options.size,
+      resolution: options.resolution
    });
    
    let pipe = screen.stream
