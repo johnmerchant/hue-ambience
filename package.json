@@ -20,10 +20,12 @@
   "license": "MIT",
   "dependencies": {
     "bmp-js": "0.0.1",
+    "inquirer": "^0.11.1",
     "lossystream": "^0.1.0",
     "node-hue-api": "^1.2.1",
     "process": "^0.11.2",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "user-home": "^2.0.0"
   },
   "devDependencies": {
     "hex": "^0.1.0"
