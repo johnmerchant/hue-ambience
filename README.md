@@ -7,7 +7,7 @@ Requires ffmpeg.
 
 ## Configuration
 
-You need a config `hue-ambience.js` file in your home directory as follows
+You need a config `.hue-ambience.json` file in your home directory as follows
 ```text/json
 {
    "fps": 5,
