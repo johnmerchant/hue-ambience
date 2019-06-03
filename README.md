@@ -20,8 +20,12 @@ You need a config `hue-ambience.js` file in your home directory as follows
  
  Where:
  
- *fps* - Frames per second to sample: lower = lower CPU usage, higher = smoother transitions
- *framerate* - Max requests per second to pipe to philips hue API
- *transition* - light transition fade spee in milliseconds
- *size* - Desktop resolution
- *resolution* - Sampling size resolution. Lower = less CPU
+ **fps** - Frames per second to sample: lower = lower CPU usage, higher = smoother transitions
+ 
+ **framerate** - Max requests per second to pipe to philips hue API
+ 
+ **transition** - light transition fade spee in milliseconds
+ 
+ **size** - Desktop resolution
+ 
+ **resolution** - Sampling size resolution. Lower = less CPU
