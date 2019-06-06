@@ -31,9 +31,7 @@ You need a config `.hue-ambience.json` file in your home directory as follows
  
  **resolution** - Sampling size resolution. Lower = less CPU
 
- **map** - Map of screen regions to emit to lights, with the following structure.
- 
-     * light - Hue Light ID
-     
-     * rect - Rectangle structute representing the screen region to capture [topLeft, topRight, bottomLeft, bottomRight]
+ **map** - Map of screen regions to emit to lights, with the following structure:
+ * light - Hue Light ID
+ * rect - Rectangle structute representing the screen region to capture: `[topLeft, topRight, bottomLeft, bottomRight]`
    
