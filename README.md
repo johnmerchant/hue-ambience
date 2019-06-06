@@ -15,7 +15,7 @@ You need a config `.hue-ambience.json` file in your home directory as follows
    "transition": 200,
    "size": "1920x1080",
    "resolution": "320x200",
-   "map": [{ "light": "Living Room", "rect": [0, 0, 1920, 1080] }]
+   "map": [{ "light": "Living Room", "rect": [0, 1920, 0, 1080] }]
  }
  ```
  
